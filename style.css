@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@700&family=Josefin+Sans:wght@500&family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(img/bg-main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav img {
+    width: 100px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 30px;
+    font-size: 15px;
+}
+
+nav li a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    background-color: #fcb15d;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.4s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+    ;
+}
+
+header .text {
+    color: white;
+    font-size: medium;
+    padding: 100px 200px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.text .line-2 {
+    font-size: 50px;
+}
+
+.text .line-3 {
+    font-weight: 800;
+    color: #fcb15d;
+    font-size: 40px;
+}
+
+header hr {
+    width: 20%;
+    position: absolute;
+    margin-left: 200px;
+}
+
+header button {
+    width: 140px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
+    padding: 8px 0;
+}
+
+header button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 800;
+
+}
+
+header button:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+    box-shadow: 10px black;
+}
+
+.footer {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 180px;
+    font-size: 10px;
+}
+
+.footer .icons .fa {
+    color: white;
+    padding: 10px 5px;
+}
